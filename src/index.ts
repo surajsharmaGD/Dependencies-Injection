@@ -4,7 +4,7 @@ import { Logger } from './services/logger';
 import type { User } from './types';
 import { createIoCContainer } from './ioc';
 
-let ioc: ReturnType<typeof createIoCContainer> = createIoCContainer();
+const ioc: ReturnType<typeof createIoCContainer> = createIoCContainer();
 
 const renderUsers = async () => {
   const usersService: Users = ioc.resolve('users');
